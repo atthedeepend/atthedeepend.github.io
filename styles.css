@@ -1,22 +1,23 @@
-/* General Body Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+/* Define Color Palette */
+:root {
+  --primary-color: #8f31f3; /* Main color */
+  --secondary-color: #ddd; /* Hover color */
+  --bg-color: #ffffff; /* Background */
+  --text-color: #2c292e; /* Main text */
+  --header-footer-bg: #ffffff; /* Header and Footer background */
+  --footer-link-color: #7316d8; /* Links in the footer */
+  --footer-email-color: #7316d8; /* Email in the footer */
+  --footer-contact-color: #7316d8; /* Contact in the footer */
 }
 
 /* Layout for the Header */
 header {
-  display: -webkit-box; /* Old Safari */
-  display: -ms-flexbox; /* IE 10 */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #ddd;
+  background-color: var(--header-footer-bg);
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .header-left {
@@ -32,7 +33,7 @@ header img {
 header h1 {
   margin: 0;
   font-size: 1.5em;
-  color: #333;
+  color: var(--text-color);
 }
 
 /* Right Section - Button */
@@ -43,8 +44,8 @@ header h1 {
 .download-button {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   text-decoration: none;
   font-size: 0.9em;
   border-radius: 5px;
@@ -52,7 +53,7 @@ header h1 {
 }
 
 .download-button:hover {
-  background-color: #45a049;
+  background-color: var(--secondary-color);
 }
 
 /* Logo and App Name Container */
@@ -71,8 +72,17 @@ header h1 {
 /* App Name */
 .app-name {
   font-size: 1.5em;
-  color: #fff;
+  color: var(--text-color);
   font-weight: bold;
+}
+
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /* Center Main Content */
@@ -84,7 +94,7 @@ main {
 
 h1 {
   font-size: 2em;
-  color: #4caf50;
+  color: var(--text-color);
   margin-bottom: 10px;
 }
 
@@ -103,15 +113,15 @@ p {
 .app-example {
   width: 100%;
   max-width: 600px;
-  border: 2px solid #ddd;
+  /*border: 2px solid #ddd;*/
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--header-footer-bg);
+  border-top: 1px solid var(--secondary-color);
   padding: 15px 20px;
   text-align: center;
   margin-top: 30px;
@@ -124,9 +134,8 @@ footer {
   gap: 10px;
 }
 
-/* Footer Links */
 .footer-link {
-  color: #4caf50;
+  color: var(--footer-link-color);
   text-decoration: none;
   font-size: 1em;
 }
@@ -135,14 +144,14 @@ footer {
   text-decoration: underline;
 }
 
-/* Footer Contact */
 .footer-contact {
+  color: var(--footer-contact-color);
   font-size: 1em;
   margin: 0;
 }
 
 .footer-email {
-  color: #4caf50;
+  color: var(--footer-email-color);
   text-decoration: none;
 }
 
