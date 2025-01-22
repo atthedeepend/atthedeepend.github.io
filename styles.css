@@ -6,8 +6,6 @@
   --text-color: #2c292e; /* Main text */
   --header-footer-bg: #ffffff; /* Header and Footer background */
   --footer-link-color: #7316d8; /* Links in the footer */
-  --footer-email-color: #7316d8; /* Email in the footer */
-  --footer-contact-color: #7316d8; /* Contact in the footer */
 }
 
 /* Layout for the Header */
@@ -157,13 +155,13 @@ footer {
 }
 
 .footer-contact {
-  color: var(--footer-contact-color);
+  color: var(--text-color);
   font-size: 1em;
   margin: 0;
 }
 
 .footer-email {
-  color: var(--footer-email-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
