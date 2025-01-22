@@ -41,6 +41,7 @@ header h1 {
   margin-left: auto;
 }
 
+.donate-btn,
 .download-button {
   display: inline-block;
   padding: 10px 15px;
@@ -50,10 +51,21 @@ header h1 {
   font-size: 0.9em;
   border-radius: 5px;
   font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  border: none; /* Removes any default button border */
+  box-shadow: none; /* Removes default button shadow */
 }
 
+.donate-btn:hover,
 .download-button:hover {
   background-color: var(--secondary-color);
+}
+
+.donate-btn button {
+  /* Remove unwanted background color or border for the 'Donate' button */
+  background: none;
+  border: none;
+  font-weight: bold;
 }
 
 /* Logo and App Name Container */
