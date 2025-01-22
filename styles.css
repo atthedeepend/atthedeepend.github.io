@@ -9,6 +9,8 @@ body {
 
 /* Layout for the Header */
 header {
+  display: -webkit-box; /* Old Safari */
+  display: -ms-flexbox; /* IE 10 */
   display: flex;
   justify-content: space-between;
   align-items: center;
