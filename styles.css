@@ -26,6 +26,8 @@ header {
 
 header img {
   height: 50px;
+  width: 90%;
+  border-radius: 10px;
 }
 
 header h1 {
@@ -93,6 +95,68 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+/* First Design */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.image-container img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+/* Second Design */
+.second-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.second-image-container {
+  margin-top: 20px;
+}
+
+.second-image-container img {
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+/* Third Design */
+.third-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.third-container img {
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+/* Fourth Design */
+.fourth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.fourth-container img {
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
 }
 
 /* Center Main Content */
