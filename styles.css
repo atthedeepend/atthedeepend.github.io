@@ -43,6 +43,7 @@ header h1 {
   color: var(--button-text-color);
 }
 
+.sign-up-btn,
 .donate-btn,
 .download-button {
   display: inline-block;
@@ -58,17 +59,10 @@ header h1 {
   box-shadow: none; /* Removes default button shadow */
 }
 
+.sign-up-btn:hover,
 .donate-btn:hover,
 .download-button:hover {
   background-color: var(--secondary-color);
-}
-
-.donate-btn button {
-  /* Remove unwanted background color or border for the 'Donate' button */
-  background: none;
-  border: none;
-  font-weight: bold;
-  color: var(--button-text-color);
 }
 
 /* Logo and App Name Container */
