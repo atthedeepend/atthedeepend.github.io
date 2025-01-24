@@ -9,6 +9,41 @@
   --footer-link-color: #7316d8; /* Links in the footer */
 }
 
+@media (max-width: 400px) {
+  .sign-up-btn,
+  .donate-btn,
+  .download-button {
+    font-size: 0.8em; /* Adjust font size */
+    padding: 8px 10px; /* Adjust padding */
+    width: 90%; /* Take up most of the container width */
+    text-align: center; /* Center text in buttons */
+    margin: 5px auto; /* Center buttons horizontally */
+    display: block; /* Ensure buttons stack vertically */
+  }
+
+  .header-right {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Align buttons to the center */
+    gap: 10px; /* Add space between buttons */
+  }
+}
+
+@media (max-width: 600px) and (min-width: 401px) {
+  .sign-up-btn,
+  .donate-btn,
+  .download-button {
+    font-size: 0.9em; /* Slightly larger size for larger devices */
+    padding: 10px 15px; /* Restore padding */
+    width: auto; /* Allow buttons to take natural width */
+    margin: 5px; /* Center buttons horizontally, adjust spacing */
+  }
+
+  .header-right {
+    justify-content: center; /* Center the buttons horizontally */
+  }
+}
+
 /* Layout for the Header */
 header {
   display: flex;
@@ -99,7 +134,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  padding: 50px 10px;
   text-align: center;
 }
 
@@ -115,12 +150,12 @@ body {
 /* Second Design */
 .second-container {
   text-align: center;
-  padding: 50px 20px;
+  padding: 50px 10px;
   background-color: #fff;
 }
 
 .second-image-container {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .second-image-container img {
@@ -133,7 +168,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 50px 10px;
 }
 
 .third-container img {
@@ -147,7 +182,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 50px 10px;
 }
 
 .fourth-container img {
@@ -159,14 +194,14 @@ body {
 /* Center Main Content */
 main {
   text-align: center;
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
 h1 {
   font-size: 2em;
   color: var(--text-color);
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 p {
@@ -178,7 +213,8 @@ p {
 .image-container {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 0;
+  padding: 0px;
 }
 
 .app-example {
@@ -228,4 +264,8 @@ footer {
 
 .footer-email:hover {
   text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 1em;
 }
